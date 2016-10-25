@@ -1,0 +1,250 @@
+<html>
+<head>
+  <title>Line Five</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="key-selection.js"></script>
+  <script src='https://cdn.rawgit.com/admsev/jquery-play-sound/master/jquery.playSound.js'></script>
+</head>
+<body>
+	<div id="myNav" class="overlay">
+  		<a href="javascript:void(0)" class="closebtn" style="font-size:20px;cursor:crosshair" onclick="closeNav()">x</a>
+ 		<div class="overlay-content">
+    		<a onclick="makevisible1()" href="javascript:void(0)" style="cursor:crosshair">Instructions</a>
+ 				<p id="paragraaf1" style= "visibility: hidden; cursor:crosshair"> Turn up your volume. Hover around the stations, and pick a point of departure. Move around using your left and right arrow keys, and above all, listen. The audio is triggered by your arrow keys, so don't worry if nothing happens when you merely click a station.</p>
+    		<a onclick="makevisible2()" href="javascript:void(0)" style="cursor:crosshair">About</a>
+    			<p id="paragraaf2" style= "visibility: hidden; cursor:crosshair">On March 22, 2016, Brussels suffered two terrorist attacks. The city was struck in its heart on a Tuesday morning, once in the airport, and an hour later at the metro station of Maalbeek. Dozens were killed, hundreds were injured, thousands were left collectively paralysed by shock. This project aims to examine the weeks surrounding the attacks. How did the people's attitude towards public space come to change in the aftermath of the events, and how do people in Brussels view their collective citizenship and identity? For this project, I was inspired by Marc Auge's concept of "non-places", which he defines as anthropological spaces of transience that do not hold enough significance to be regarded as "places". The second influence for this project was 'Multitude' by Michael Hardt and Antonio Negri, whose ideas I have incorporated implicitly into the project's ideas on communal space. Line Five is a project by Paola Verhaert, and was made in the context of Digital Textualities course at the University of Leuven. I travel on line five on a daily basis.</p>
+  		</div>
+	</div>
+
+	<div id= "about" class="about"> 
+	<span style="cursor:crosshair;color:black" onclick="openNav()">Line Five
+		<div id="uitleg">About and instructions</div></span>
+	</div>
+
+	<script>
+	function openNav() {
+    	document.getElementById("myNav").style.height = "100%";
+	}
+
+	function closeNav() {
+    	document.getElementById("myNav").style.height = "0%";
+	}
+
+	function makevisible1() {
+		document.getElementById("paragraaf1").style.visibility = "visible"; 
+	}
+
+	function makevisible2() {
+		document.getElementById("paragraaf2").style.visibility = "visible"; 
+	}
+
+	</script>
+
+
+	<div style="margin:0; auto;" class="container">
+		<div class="selection-container" style="cursor:crosshair">
+			<div class="selection-list">
+				<svg id="erasmus" class="station selection-item">
+				  <circle class="station-circle" cx="5" cy="5" r="5" stroke="black" stroke-width="0.6" fill="white" />
+				</svg>
+				<svg id="merckx" class="station selection-item">
+				  <circle class="station-circle" cx="5" cy="5" r="5" stroke="black" stroke-width="0.6" fill="white" />
+				</svg>
+				<svg id="coovi" class="station selection-item">
+				  <circle class="station-circle" cx="5" cy="5" r="5" stroke="black" stroke-width="0.6" fill="white" />
+				</svg>
+				<svg id="hetrad" class="station selection-item">
+				  <circle class="station-circle" cx="5" cy="5" r="5" stroke="black" stroke-width="0.6" fill="white" />
+				</svg>
+				<svg id="bizet" class="station selection-item">
+				  <circle class="station-circle" cx="5" cy="5" r="5" stroke="black" stroke-width="0.6" fill="white" />
+				</svg>
+				<svg id="veeweyde" class="station selection-item">
+				  <circle class="station-circle" cx="5" cy="5" r="5" stroke="black" stroke-width="0.6" fill="white" />
+				</svg>
+				<svg id="guido" class="station selection-item">
+				  <circle class="station-circle" cx="5" cy="5" r="5" stroke="black" stroke-width="0.6" fill="white" />
+				</svg>
+				<svg id="aumale" class="station selection-item">
+				  <circle class="station-circle" cx="5" cy="5" r="5" stroke="black" stroke-width="0.6" fill="white" />
+				</svg>
+				<svg id="brel" class="station selection-item">
+				  <circle class="station-circle" cx="5" cy="5" r="5" stroke="black" stroke-width="0.6" fill="white" />
+				</svg>
+				<svg id="weststation" class="station selection-item">
+				  <circle class="station-circle" cx="5" cy="5" r="5" stroke="black" stroke-width="0.6" fill="white" />
+				</svg>
+				<svg id="beekkant" class="station selection-item">
+				  <circle class="station-circle" cx="5" cy="5" r="5" stroke="black" stroke-width="0.6" fill="white" />
+				</svg>
+				<svg id="vijvers" class="station selection-item">
+				  <circle class="station-circle" cx="5" cy="5" r="5" stroke="black" stroke-width="0.6" fill="white" />
+				</svg>
+				<svg id="graaf" class="station selection-item">
+				  <circle class="station-circle" cx="5" cy="5" r="5" stroke="black" stroke-width="0.6" fill="white" />
+				</svg>
+				<svg id="sintkat" class="station selection-item">
+				  <circle class="station-circle" cx="5" cy="5" r="5" stroke="black" stroke-width="0.6" fill="white" />
+				</svg>
+				<svg id="brouckere" class="station selection-item">
+				  <circle class="station-circle" cx="5" cy="5" r="5" stroke="black" stroke-width="0.6" fill="white" />
+				</svg>
+				<svg id="centraalstation" class="station selection-item">
+				  <circle class="station-circle" cx="5" cy="5" r="5" stroke="black" stroke-width="0.6" fill="white" />
+				</svg>
+				<svg id="park" class="station selection-item">
+				  <circle class="station-circle" cx="5" cy="5" r="5" stroke="black" stroke-width="0.6" fill="white" />
+				</svg>
+				<svg id="kunstwet" class="station selection-item">
+				  <circle class="station-circle" cx="5" cy="5" r="5" stroke="black" stroke-width="0.6" fill="white" />
+				</svg>
+				<svg id="maalbeek" class="station selection-item">
+				  <circle class="station-circle" cx="5" cy="5" r="5" stroke="black" stroke-width="0.6" fill="white" />
+				</svg>
+				<svg id="schuman" class="station selection-item">
+				  <circle class="station-circle" cx="5" cy="5" r="5" stroke="black" stroke-width="0.6" fill="white" />
+				</svg>
+				<svg id="merode" class="station selection-item">
+				  <circle class="station-circle" cx="5" cy="5" r="5" stroke="black" stroke-width="0.6" fill="white" />
+				</svg>
+				<svg id="thieffry" class="station selection-item">
+				  <circle class="station-circle" cx="5" cy="5" r="5" stroke="black" stroke-width="0.6" fill="white" />
+				</svg>
+				<svg id="petillon" class="station selection-item">
+				  <circle class="station-circle" cx="5" cy="5" r="5" stroke="black" stroke-width="0.6" fill="white" />
+				</svg>
+				<svg id="hankar" class="station selection-item">
+				  <circle class="station-circle" cx="5" cy="5" r="5" stroke="black" stroke-width="0.6" fill="white" />
+				</svg>
+				<svg id="delta" class="station selection-item">
+				  <circle class="station-circle" cx="5" cy="5" r="5" stroke="black" stroke-width="0.6" fill="white" />
+				</svg>
+				<svg id="beaulieu" class="station selection-item">
+				  <circle class="station-circle" cx="5" cy="5" r="5" stroke="black" stroke-width="0.6" fill="white" />
+				</svg>
+				<svg id="demey" class="station selection-item">
+				  <circle class="station-circle" cx="5" cy="5" r="5" stroke="black" stroke-width="0.6" fill="white" />
+				</svg>
+				<svg id="hermanndebroux" class="station selection-item">
+				  <circle class="station-circle" cx="5" cy="5" r="5" stroke="black" stroke-width="0.6" fill="white" />
+				</svg>
+			</div>
+
+		</div>
+		<img src="linefive.gif">
+
+	</div>
+
+		<script>
+			$(function() {
+				$(".selection-container").keySelection();
+				$(".selection-container").on("keySelection.selection",function(e){
+					var $items = $(".selection-item");
+					var index = $items.index($(e.selectedElement));
+					$(".selected-element").empty().append(index+1);
+				});
+				$(".selection-container").on("keySelection.keyHover",function(e){
+					var $items = $(".selection-item");
+					var index = $items.index($(e.keyHoverElement));
+					$(".key-hover-element").empty().append(index+1);
+				});	
+				$(".button.up").on("click",function(){
+					$(".selection-container").keySelection("up");
+					return false;
+				});			
+				$(".button.down").on("click",function(){
+					$(".selection-container").keySelection("down");
+					return false;
+				});		
+				$(".button.stop").on("click",function(){
+					$(".selection-container").keySelection("stop");
+					return false;
+				});					
+				$(".button.start").on("click",function(){
+					$(".selection-container").keySelection("start");
+					return false;
+				});					
+				$(".button.select").on("click",function(){
+					$(".selection-container").keySelection("select");
+					return false;
+				});
+
+				var stations = {
+					  "erasmus" : "Track_01",
+					  "merckx" : "Track_02",
+					  "coovi" : "Track_03",
+					  "hetrad" : "Track_01",
+					  "bizet" : "Track_02",
+					  "veeweyde" : "Track_03",
+					  "guido" : "Track_01",
+					  "aumale" : "Track_02",
+					  "brel" : "Track_03",
+					  "weststation" : "Track_01",
+					  "beekkant" : "Track_02",
+					  "vijvers" : "Track_03",
+					  "graaf" : "Track_01",
+					  "sintkat" : "Track_02",
+					  "brouckere" : "Track_03",
+					  "centraalstation" : "Track_01",
+					  "park" : "Track_02",
+					  "kunstwet" : "Track_03",
+					  "maalbeek" : "Track_04",
+					  "schuman" : "Track_03",
+					  "merode" : "Track_02",
+					  "thieffry" : "Track_01",
+					  "petillon" : "Track_03",
+					  "hankar" : "Track_02",
+					  "delta" : "Track_01",
+					  "beaulieu" : "Track_03",
+					  "demey" : "Track_02",
+					  "hermanndebroux" : "Track_01"
+				};
+
+
+				counter = 0;
+
+				function playTrack(track) {
+					$('audio').each(function(){ this.pause() });
+					$.playSound("mixed_audio/" + track);
+				}
+
+
+				$("body").on("keydown click", function(e) {
+					if(e.keyCode == 37 || e.keyCode == 39 ) {
+						setTimeout(
+							function() 
+							{
+								var station = $(".key-hover")[0].id;
+
+								if(station == "maalbeek" && counter == 0) {
+									playTrack(stations[station]);
+									counter = 5;
+								}					
+
+								else if(counter == 0) {
+									playTrack(stations[station]);
+								}
+
+								else {
+									playTrack("Track_0" + String(counter));
+
+									if(counter < 10) {
+										counter ++;
+									};
+								}
+							}, 1
+						);
+
+					}
+				})
+
+
+			});
+		</script>
+
+
+</body>
+</html>
+
+

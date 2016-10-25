@@ -1,0 +1,240 @@
+body{
+	font-family:sans-serif;
+	color:#666;
+    margin: 0px;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    font-family: 'Monaco', sans-serif;
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, a);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.about {
+    position: absolute;
+    font-family: 'Monaco', sans-serif;
+    font-size:35px;
+    top: 4%;
+    left: 4%;
+    width: 10%;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 5px;
+
+}
+
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #000;
+}
+
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 40px !important;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .closebtn {
+    font-size: 25px !important;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+.container {
+    width:1104px;
+    height:716px;
+}
+
+
+.station {
+    width: 10px;
+    height: 10px;
+	position: relative;
+}
+
+.selection-item:hover .station-circle{
+	fill: black;
+}
+
+.selection-item.key-hover .station-circle, .selection-item.key-hover:hover .station-circle{
+	fill: black;
+}
+.selection-item.selected  .station-circle, .selection-item.selected:hover  .station-circle{
+	fill: black;
+}
+
+#uitleg {
+    font-size: 14px;
+}
+
+
+#erasmus {
+    left: 153px;
+    top: 495px;
+}
+
+#merckx {
+    left: 178px;
+    top: 495px;
+}
+
+#coovi {
+    left: 202px;
+    top: 495px;
+}
+
+#hetrad {
+    left: 227px;
+    top: 495px;
+}
+
+#bizet {
+    left: 242px;
+    top: 457px;
+}
+
+#veeweyde {
+    left: 228px;
+    top: 420px;
+}
+
+#guido {
+    left: 213px;
+    top: 384px;
+}
+
+#aumale {
+    left: 199px;
+    top: 346px;
+}
+
+#brel {
+    left: 184px;
+    top: 309px;
+}
+
+#weststation {
+    left: 170px;
+    top: 264px;
+}
+
+#beekkant {
+    left: 156px;
+    top: 225px;
+}
+
+#vijvers {
+    left: 182px;
+    top: 190px;
+}
+
+#graaf {
+    left: 208px;
+    top: 190px;
+}
+
+#sintkat {
+    left: 237px;
+    top: 190px;
+}
+
+#brouckere {
+    left: 269px;
+    top: 190px;
+}
+
+#centraalstation {
+    left: 301px;
+    top: 190px;
+}
+
+#park {
+    left: 318px;
+    top: 190px;
+}
+
+#kunstwet {
+    left: 338px;
+    top: 190px;
+}
+
+#maalbeek {
+    left: 368px;
+    top: 190px;
+}
+
+#schuman {
+    left: 395px;
+    top: 190px;
+}
+
+#merode {
+    left: 419px;
+    top: 190px;
+}
+
+#thieffry {
+    left: 444px;
+    top: 210px;
+}
+
+#petillon {
+    left: 448px;
+    top: 243px;
+}
+
+#hankar {
+    left: 454px;
+    top: 278px;
+}
+
+#delta {
+    left: 460px;
+    top: 315px;
+}
+
+#beaulieu {
+    left: 495px;
+    top: 337px;
+}
+
+#demey {
+    left: 533px;
+    top: 337px;
+}
+
+#hermanndebroux {
+    left: 564px;
+    top: 337px;
+}
